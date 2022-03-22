@@ -1,0 +1,74 @@
+// Farbpalette 
+$schriftfarbe: #2C262A;
+$buttonfarbe: #F7DE50;
+$primary-color: #E58F65;
+$secondary-color: #F6F0CB;
+
+body {
+    background-color: #F6F0CB;
+    color: #2C262A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    background-color: #E58F65;
+    color: white;
+    border-radius: 5px;
+    border: solid .1px #2C262A;
+    padding: .3em 1em .3em 1em;
+}
+
+.button:hover {
+    background-color: #cf6e3d;
+    transition-duration: 1s;
+}
+
+/* Header */
+#logo {
+    width: 100px;
+    height: 50%;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto;
+}
+
+/* Content */
+.carousel, .carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    min-height: 500px;
+}
+
+.carousel-caption {
+    color: white !important;
+    background-color: rgba(44, 38, 42, .9);
+}
+
+.slide-headline {
+    font-weight: bold;
+}
+
+.slide-text {
+    padding: .3em 2em .3em 2em;
+}
+
+h1 {
+    color: #E58F65;
+}
+h2{
+    color: #E58F65;
+}
+h3{
+    color: #E58F65;
+}
+
+
+/* Footer */
+.links {
+    text-decoration: none;
+}
