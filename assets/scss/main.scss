@@ -60,6 +60,10 @@ h1, h2, h3 {
     color: $primary-color;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 /* Footer */
 .links {
     text-decoration: none;
