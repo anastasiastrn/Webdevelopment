@@ -16,11 +16,10 @@ body {
     border-radius: 5px;
     border: solid .1px $schriftfarbe;
     padding: .3em 1em .3em 1em;
-}
-
-.button:hover {
-    background-color: #CF6E3D; // ist nicht die primary color, sondern ein Ticken dunkler
-    transition-duration: 1s;
+    &:hover {
+        background-color: #CF6E3D; // ist nicht die primary color, sondern ein Ticken dunkler
+        transition-duration: 1s;
+    }
 }
 
 /* Header */
@@ -57,15 +56,16 @@ body {
     padding: .3em 2em .3em 2em;
 }
 
-h1 {
+h1, h2, h3 {
     color: $primary-color;
 }
-h2{
+
+/*h2 {
     color: $primary-color;
 }
-h3{
+h3 {
     color: $primary-color;
-}
+}*/
 
 
 /* Footer */
