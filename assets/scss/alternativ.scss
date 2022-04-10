@@ -1,35 +1,122 @@
 // Farbpalette 
 $schriftfarbe: #2C262A;
-$buttonfarbe: #d5c049;
-$primary-color: #d87a4b;
 $secondary-color: #fffdef;
-$alert-bg-red: red;
-$alert-bg-blue: lightblue;
-$alert-bg-green: green;
+$rosy: #fec2ea;
+$violet: rgb(163, 63, 163);
+$yellow: rgb(255, 255, 130);
+$alert-bg-red: rgb(255, 76, 76);
+$alert-bg-blue: rgb(132, 181, 197);
+$alert-bg-green: rgb(92, 183, 92);
 
+// Schriftart
+$font-style: Dancing Script, serif;
+$font-style-2: Arial, Helvetica, sans-serif;
+
+// Größen
+.small {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.medium {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+}
+
+.big {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 500px;
+}
+
+// Padding
+.padding-s {
+    padding: 5px 20px 5px 20px;
+}
+
+.padding-m {
+    padding: 15px 20px 15px 20px;
+}
+
+.padding-l {
+    padding: 25px 20px 25px 20px;
+}
+
+// Margin
+.margin-s {
+    margin: 5px 20px 5px 20px;
+}
+
+.margin-m {
+    margin: 15px 20px 15px 20px;
+}
+
+.margin-l {
+    margin: 25px 20px 25px 20px;
+}
+
+// Schatten
+
+// Abgerundete Ecken
+.rounded {
+    border-radius: 5px;
+}
+
+// Schatten
+.shadow {
+    box-shadow: 10px 10px rgb(177, 171, 171);
+}
+
+// Styling der Elemente
 body {
     background-color: $secondary-color;
     color: $schriftfarbe;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.myfont {
+    font-family: $font-style;
+}
+
+.rosy {
+    background-color: $rosy;
+    border: .5px solid #2C262A;
+}
+.violet {
+    background-color: $violet;
+    border: .5px solid #2C262A;
+}
+.yellow {
+    background-color: $yellow;
+    border: .5px solid #2C262A;
 }
 
 .alert-box {
-    padding: 0.4em;
-    margin-bottom: 0.4em;
     color: $secondary-color;
+    font-family: $font-style-2;
 }
 
 .alert-box--red {
     background-color: $alert-bg-red;
+    border: .5px solid rgb(138, 39, 39);
 }
 
 .alert-box--green {
-    background-color: $alert-bg-green
+    background-color: $alert-bg-green;
+    border: .5px solid rgb(53, 102, 53);
 }
 
 .alert-box--blue {
     background-color: $alert-bg-blue;
     color: $schriftfarbe;
+    border: .5px solid rgb(88, 120, 131);
 }
 
 .closebutton {

@@ -1,28 +1,126 @@
+@charset "UTF-8";
+/* line 16, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.small {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+/* line 24, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.medium {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 250px;
+}
+
+/* line 32, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.big {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 500px;
+}
+
+/* line 41, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.padding-s {
+  padding: 5px 20px 5px 20px;
+}
+
+/* line 45, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.padding-m {
+  padding: 15px 20px 15px 20px;
+}
+
+/* line 49, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.padding-l {
+  padding: 25px 20px 25px 20px;
+}
+
+/* line 54, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.margin-s {
+  margin: 5px 20px 5px 20px;
+}
+
+/* line 58, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.margin-m {
+  margin: 15px 20px 15px 20px;
+}
+
+/* line 62, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.margin-l {
+  margin: 25px 20px 25px 20px;
+}
+
+/* line 69, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.rounded {
+  border-radius: 5px;
+}
+
+/* line 74, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.shadow {
+  box-shadow: 10px 10px #b1abab;
+}
+
+/* line 79, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
 body {
   background-color: #fffdef;
   color: #2C262A;
+}
+
+/* line 84, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.myfont {
+  font-family: Dancing Script, serif;
+}
+
+/* line 88, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.rosy {
+  background-color: #fec2ea;
+  border: .5px solid #2C262A;
+}
+
+/* line 92, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.violet {
+  background-color: #a33fa3;
+  border: .5px solid #2C262A;
+}
+
+/* line 96, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.yellow {
+  background-color: #ffff82;
+  border: .5px solid #2C262A;
+}
+
+/* line 101, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
+.alert-box {
+  color: #fffdef;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.alert-box {
-  padding: 0.4em;
-  margin-bottom: 0.4em;
-  color: #fffdef;
-}
-
+/* line 106, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
 .alert-box--red {
-  background-color: red;
+  background-color: #ff4c4c;
+  border: 0.5px solid #8a2727;
 }
 
+/* line 111, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
 .alert-box--green {
-  background-color: green;
+  background-color: #5cb75c;
+  border: 0.5px solid #356635;
 }
 
+/* line 116, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
 .alert-box--blue {
-  background-color: lightblue;
+  background-color: #84b5c5;
   color: #2C262A;
+  border: 0.5px solid #587883;
 }
 
+/* line 122, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
 .closebutton {
   margin-left: 0.2em;
   color: #fffdef;
@@ -33,6 +131,9 @@ body {
   transition: 0.3s;
 }
 
+/* line 132, ../Landingpage für einen Studiengang/assets/scss/alternativ.scss */
 .closebtn:hover {
   color: #2C262A;
 }
+
+/*# sourceMappingURL=alternativ.css.map */
