@@ -103,17 +103,17 @@ body {
     font-family: $font-style-2;
 }
 
-.alert-box--red {
+.ab-red {
     background-color: $alert-bg-red;
     border: .5px solid rgb(138, 39, 39);
 }
 
-.alert-box--green {
+.ab-green {
     background-color: $alert-bg-green;
     border: .5px solid rgb(53, 102, 53);
 }
 
-.alert-box--blue {
+.ab-blue {
     background-color: $alert-bg-blue;
     color: $schriftfarbe;
     border: .5px solid rgb(88, 120, 131);
