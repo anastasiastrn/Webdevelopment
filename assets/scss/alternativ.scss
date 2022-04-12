@@ -13,12 +13,29 @@ $font-style: Dancing Script, serif;
 $font-style-2: Arial, Helvetica, sans-serif;
 
 // Größen
-.small {
-    width: 100px;
-    height: 100px;
+.text-centered {
     text-align: center;
     vertical-align: middle;
     line-height: 100px;
+}
+
+$sizes: 100, 250, 500;
+
+@each $size in $sizes {
+    .w-#{$size} {
+        width: #{$size}px;
+    }
+
+    .h-#{$size} {
+        height: #{$size}px;
+    }
+
+}
+
+.small {
+    width: 100px;
+    height: 100px;
+    
 }
 
 .medium {
@@ -83,17 +100,20 @@ body {
     font-family: $font-style;
 }
 
+.square {
+    border: .5px solid #2C262A;
+}
+
 .rosy {
     background-color: $rosy;
-    border: .5px solid #2C262A;
 }
+
 .violet {
     background-color: $violet;
-    border: .5px solid #2C262A;
 }
+
 .yellow {
     background-color: $yellow;
-    border: .5px solid #2C262A;
 }
 
 .alert-box {
@@ -104,18 +124,18 @@ body {
 
 .ab-red {
     background-color: $alert-bg-red;
-    border: rgb(138, 39, 39);
+    border-color: rgb(138, 39, 39);
 }
 
 .ab-green {
     background-color: $alert-bg-green;
-    border: rgb(53, 102, 53);
+    border-color: rgb(53, 102, 53);
 }
 
 .ab-blue {
     background-color: $alert-bg-blue;
     color: $schriftfarbe;
-    border: rgb(88, 120, 131);
+    border-color: rgb(88, 120, 131);
 }
 
 .closebutton {
