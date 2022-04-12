@@ -1,9 +1,12 @@
+@charset "UTF-8";
+/* line 7, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 body {
   background-color: #F6F0CB;
   color: #2C262A;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* line 13, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .button {
   background-color: #E58F65;
   color: white;
@@ -12,54 +15,67 @@ body {
   padding: .3em 1em .3em 1em;
 }
 
+/* line 19, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .button:hover {
   background-color: #CF6E3D;
   transition-duration: 1s;
 }
 
 /* Header */
+/* line 26, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 #logo {
   width: 100px;
   height: 50%;
 }
 
+/* line 31, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .mr-auto, .mx-auto {
   margin-right: auto;
 }
 
 /* Content */
+/* line 36, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .carousel, .carousel-item {
   height: 700px;
 }
 
+/* line 40, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .carousel-item img {
   position: absolute;
   object-fit: cover;
   min-height: 500px;
 }
 
+/* line 46, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .carousel-caption {
   color: white !important;
   background-color: rgba(44, 38, 42, 0.9);
 }
 
+/* line 51, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .slide-headline {
   font-weight: bold;
 }
 
+/* line 55, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .slide-text {
   padding: .3em 2em .3em 2em;
 }
 
+/* line 59, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 h1, h2, h3 {
   color: #E58F65;
 }
 
+/* line 63, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 h2 {
   text-transform: uppercase;
 }
 
 /* Footer */
+/* line 68, ../Landingpage für einen Studiengang/assets/scss/main.scss */
 .links {
   text-decoration: none;
 }
+
+/*# sourceMappingURL=main.css.map */
