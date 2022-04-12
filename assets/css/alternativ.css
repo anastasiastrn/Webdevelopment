@@ -81,22 +81,23 @@ body {
 .alert-box {
   color: #fffdef;
   font-family: Arial, Helvetica, sans-serif;
+  border: .5px solid;
 }
 
 .ab-red {
   background-color: #ff4c4c;
-  border: 0.5px solid #8a2727;
+  border: #8a2727;
 }
 
 .ab-green {
   background-color: #5cb75c;
-  border: 0.5px solid #356635;
+  border: #356635;
 }
 
 .ab-blue {
   background-color: #84b5c5;
   color: #2C262A;
-  border: 0.5px solid #587883;
+  border: #587883;
 }
 
 .closebutton {
