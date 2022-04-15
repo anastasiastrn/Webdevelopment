@@ -1,24 +1,8 @@
 // Farbpalette 
 $schriftfarbe: #2C262A;
 $secondary-color: #fffdef;
-$rosy: #fec2ea;
-$violet: rgb(163, 63, 163);
-$yellow: rgb(255, 255, 130);
-$alert-bg-red: rgb(255, 76, 76);
-$alert-bg-blue: rgb(132, 181, 197);
-$alert-bg-green: rgb(92, 183, 92);
-
-.bg-rosy {
-    background-color: $rosy;
-}
-
-.bg-violet {
-    background-color: $violet;
-}
-
-.bg-yellow {
-    background-color: $yellow;
-}
+$box-bg-colors: pink, purple, yellow;
+$alert-bg-colors: red, turquoise, green;
 
 // Schriftart
 $font-style: Dancing Script, serif;
@@ -32,16 +16,13 @@ $font-style-2: Arial, Helvetica, sans-serif;
 }
 
 $sizes: 100, 250, 500;
-
 @each $size in $sizes {
     .w-#{$size} {
         width: #{$size}px;
     }
-
     .h-#{$size} {
         height: #{$size}px;
     }
-
 }
 
 // Padding
@@ -94,6 +75,12 @@ body {
     border: .5px solid #2C262A;
 }
 
+@each $color in $box-bg-colors {
+    .bg-#{$color} {
+        background-color: #{$color};
+    }
+}
+
 // Alert Boxen
 .alert-box {
     color: $secondary-color;
@@ -101,20 +88,10 @@ body {
     border: .5px solid;
 }
 
-.ab-red {
-    background-color: $alert-bg-red;
-    border-color: rgb(138, 39, 39);
-}
-
-.ab-green {
-    background-color: $alert-bg-green;
-    border-color: rgb(53, 102, 53);
-}
-
-.ab-blue {
-    background-color: $alert-bg-blue;
-    color: $schriftfarbe;
-    border-color: rgb(88, 120, 131);
+@each $color in $alert-bg-colors {
+    .ab-#{$color} {
+        background-color: #{$color};
+    }
 }
 
 .closebutton {
