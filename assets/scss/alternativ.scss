@@ -8,6 +8,18 @@ $alert-bg-red: rgb(255, 76, 76);
 $alert-bg-blue: rgb(132, 181, 197);
 $alert-bg-green: rgb(92, 183, 92);
 
+.bg-rosy {
+    background-color: $rosy;
+}
+
+.bg-violet {
+    background-color: $violet;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
 // Schriftart
 $font-style: Dancing Script, serif;
 $font-style-2: Arial, Helvetica, sans-serif;
@@ -82,18 +94,7 @@ body {
     border: .5px solid #2C262A;
 }
 
-.rosy {
-    background-color: $rosy;
-}
-
-.violet {
-    background-color: $violet;
-}
-
-.yellow {
-    background-color: $yellow;
-}
-
+// Alert Boxen
 .alert-box {
     color: $secondary-color;
     font-family: $font-style-2;
