@@ -11,8 +11,6 @@ $font-style-2: Arial, Helvetica, sans-serif;
 // Größen
 .text-centered {
     text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
 }
 
 $sizes: 50, 75, 100, 250, 500;
@@ -26,7 +24,7 @@ $sizes: 50, 75, 100, 250, 500;
 }
 
 // Padding und Margin
-$p-m-sizes: 5, 15, 25;
+$p-m-sizes: 5, 15, 25, 50;
 @each $size in $p-m-sizes {
     .p-#{$size} {
         padding: #{$size}px 20px #{$size}px 20px;
@@ -51,6 +49,7 @@ body {
     margin: 0;
     background-color: $secondary-color;
     color: $schriftfarbe;
+    font-family: $font-style-2;
 }
 
 .myfont {
@@ -130,3 +129,57 @@ body {
 .closebtn:hover {
     color: $schriftfarbe;
   }
+
+  // Form
+.form {
+    border: lightgray .5px solid;
+
+    .label {
+        display: inline-block;
+        font-size: smaller;
+        margin-bottom: 5px;
+    }
+
+    input[type="email"] {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px solid;
+    }
+
+    input[type="password"] {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px solid;
+    }
+
+    input:focus, textarea:focus {
+        background   : rgba(0,0,0,.1);
+        border-bottom: #2C262A .5px solid;
+    }
+      
+
+    .form-field {
+        display: block;
+        width: 25%;
+        padding: 6px 12px 6px 12px;
+    }
+}
+
+// Buttons
+.button {
+    padding: 6px 12px 6px 12px;
+}
+
+.button-primary {
+    background-color: $schriftfarbe;
+    color: white;
+
+    &:hover {
+        color: $schriftfarbe;
+        background-color: white;
+        transition: 200ms linear;
+        border: $schriftfarbe .5px solid;
+    }
+}
