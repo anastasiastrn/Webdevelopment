@@ -15,7 +15,7 @@ $font-style-2: Arial, Helvetica, sans-serif;
     line-height: 100px;
 }
 
-$sizes: 100, 250, 500;
+$sizes: 50, 75, 100, 250, 500;
 @each $size in $sizes {
     .w-#{$size} {
         width: #{$size}px;
@@ -25,30 +25,15 @@ $sizes: 100, 250, 500;
     }
 }
 
-// Padding
-.padding-s {
-    padding: 5px 20px 5px 20px;
-}
-
-.padding-m {
-    padding: 15px 20px 15px 20px;
-}
-
-.padding-l {
-    padding: 25px 20px 25px 20px;
-}
-
-// Margin
-.margin-s {
-    margin: 5px 20px 5px 20px;
-}
-
-.margin-m {
-    margin: 15px 20px 15px 20px;
-}
-
-.margin-l {
-    margin: 25px 20px 25px 20px;
+// Padding und Margin
+$p-m-sizes: 5, 15, 25;
+@each $size in $p-m-sizes {
+    .p-#{$size} {
+        padding: #{$size}px 20px #{$size}px 20px;
+    }
+    .m-#{$size} {
+        margin: #{$size}px 20px #{$size}px 20px;
+    }
 }
 
 // Abgerundete Ecken
@@ -63,6 +48,7 @@ $sizes: 100, 250, 500;
 
 // Styling der Elemente
 body {
+    margin: 0;
     background-color: $secondary-color;
     color: $schriftfarbe;
 }
@@ -78,6 +64,43 @@ body {
 @each $color in $box-bg-colors {
     .bg-#{$color} {
         background-color: #{$color};
+    }
+}
+
+// Navigation Bar
+.nav {
+    margin: 0;
+    margin-top: 0 !important;
+    padding: 0;
+    font-family: $font-style;
+    list-style: none;
+    background-color: $schriftfarbe;
+    overflow: hidden;
+
+    .nav-item-logo {
+        float: left;
+    }
+
+    .nav-item {
+        float: left;
+        line-height: 50px;
+        height: 75px;
+
+        &:hover {
+            background-color: ghostwhite;
+            transition: 500ms linear;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+
+            &:hover {
+                color: $schriftfarbe;
+            }
+        }
     }
 }
 
